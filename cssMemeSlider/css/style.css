@@ -1,2 +1,137 @@
 /* font-family: 'Bungee Spice', cursive;
 font-family: 'Roboto', sans-serif; */
+
+:root {
+    --color-gold: #bdae82;
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-Silver: #c8c8c8;
+    --font1: 60px;
+    --font2: 40px;
+    --font3: 20px;
+    --font4: 18px;
+    --font5: 24px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--color-black);
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/**=== footer ===**/
+
+.footer__container-wrap {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+.footer__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+.footer__item {
+    font-family:  'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font3);
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+.footer__item-a {
+    margin-left: 19px;
+}
+
+.footer__item a:link {
+    color: var(--color-white);
+}
+
+.footer__item a:visited {
+    color: var(--color-white);
+}
+
+.footer__item a:hover {
+    color: var(--color-gold);
+}
+
+.footer__item a:active {
+    color: var(--color-gold);
+}
+
+
+.rs_school-item {
+    width: 100px;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    transition: 0.5s;
+    filter: invert(100%);
+}
+
+.rs_school-item:hover {
+    filter: invert(75%) sepia(7%) saturate(1280%) hue-rotate(7deg) brightness(92%) contrast(90%);
+}
+
+.social-nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
