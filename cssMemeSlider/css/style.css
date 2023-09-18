@@ -89,6 +89,98 @@ h1 {
     overflow: hidden;
 }
 
+.radio {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: end;
+}
+
+.memes {
+    width: 500%;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.meme {
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+.text {
+    font-family:  'Bungee Spice', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font4);
+    transform: translateY(2rem);
+}
+
+.controls {
+    display: flex;
+    justify-content: end;
+}
+
+.label {
+    cursor: pointer;
+    background-color: var(--color-grey);
+    transform: translateY(-1rem);
+    z-index: 1;
+}
+
+.label div {
+    height: 1.125rem;
+    width: 1.125rem;
+    margin: 0.625rem 0.25rem;
+    display: block;
+    background-color: var(--color-azure);
+    border: 0.188rem var(--color-azure) solid;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.label:active div {
+    opacity: 0.5;
+}
+
+.label:hover div {
+    border: 3px var(--color-white) solid;
+    background-color: var(--color-white);
+}
+
+#slide1:checked~.controls #label1 div,
+#slide2:checked~.controls #label2 div,
+#slide3:checked~.controls #label3 div,
+#slide4:checked~.controls #label4 div,
+#slide5:checked~.controls #label5 div {
+    border: 0.188rem var(--color-azure) solid;
+    background-color: transparent;
+}
+
+
+#slide1:checked~.memes {
+    transform: translateX(0);
+}
+#slide2:checked~.memes {
+    transform: translateX(-20%);
+}
+#slide3:checked~.memes {
+    transform: translateX(-40%);
+}
+#slide4:checked~.memes {
+    transform: translateX(-60%);
+}
+#slide5:checked~.memes {
+    transform: translateX(-80%);
+}
+.radio:checked~.controls .label:hover div {
+    border: 0.188rem var(--color-white) solid !important;
+}
+
 
 /**=== footer ===**/
 
@@ -163,3 +255,4 @@ h1 {
     list-style: none;
     gap: 1.25rem;
 }
+
