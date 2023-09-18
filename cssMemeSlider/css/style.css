@@ -149,7 +149,7 @@ h1 {
 }
 
 .label:hover div {
-    border: 3px var(--color-white) solid;
+    border: 0.188rem var(--color-white) solid;
     background-color: var(--color-white);
 }
 
