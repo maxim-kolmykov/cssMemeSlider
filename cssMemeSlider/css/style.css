@@ -149,7 +149,7 @@ h1 {
 }
 
 .label:hover div {
-    border: 3px var(--color-white) solid;
+    border: 0.188rem var(--color-white) solid;
     background-color: var(--color-white);
 }
 
@@ -275,18 +275,41 @@ h1 {
 
         padding: 0.25rem 1.25rem;
     }
+
+    #alert-info {
+        display: none;
+    }
 }
 
 @media (max-width: 640px) {
     .controls {
         justify-content: center;
-        transform: translateY(0.25rem);
+        transform: translateY(-1.2rem);
     }
     .text {
-        transform: translateY(0.5rem);
+        transform: translateY(2.5rem);
     }
 
 }
+@media (max-width: 640px) {
+    .controls {
+        justify-content: center;
+        transform: translateY(-1.2rem);
+         z-index: 10;
+    }
+
+
+}
+
+@media (max-width: 528px) {
+    .controls {
+        justify-content: center;
+        transform: translateY(-2.4rem);
+        z-index: 10;
+    }
+
+}
+
 @media (max-width: 480px) {
 
     h1 {
@@ -301,5 +324,12 @@ h1 {
         margin: 0 auto;
     }
 
+
+}
+@media (max-width: 320px) {
+    .controls {
+        justify-content: center;
+        transform: translateY(-3.8rem);
+    }
 
 }
