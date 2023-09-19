@@ -275,6 +275,10 @@ h1 {
 
         padding: 0.25rem 1.25rem;
     }
+
+    #alert-info {
+        display: none;
+    }
 }
 
 @media (max-width: 640px) {
